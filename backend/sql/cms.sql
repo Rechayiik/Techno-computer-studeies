@@ -6,7 +6,7 @@ CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    role ENUM('admin', 'instructor', 'student'), DEFAULT 'student'
+    role ENUM('admin', 'instructor', 'student') DEFAULT 'student'
 );
 
 CREATE TABLE courses (
@@ -14,7 +14,7 @@ CREATE TABLE courses (
     title VARCHAR(255) NOT NULL,
     description TEXT,
     instructor_id INT,
-    created_at = TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (instructor_id) REFERENCES users(id)
 );
 

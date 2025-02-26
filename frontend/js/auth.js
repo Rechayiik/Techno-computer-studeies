@@ -1,8 +1,8 @@
 // Login Form Submission
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email = document.getElementById('email').value ;
+    const password = document.getElementById('password').value ;
 
     fetch('../backend/php/auth/login.php', {
         method: 'POST',
@@ -18,8 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         } else {
             alert('Login failed: ' + data.message);
         }
-    })
-    .catch(error => console.error('Error:', error));
+    }).catch(error => console.error('Error:', error));
 });
 
 
