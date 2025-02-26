@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - CMS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Course Detail</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <div class="course-detail-container">
+            <!-- Course Header Section -->
+            <div class="course-header">
+                <div class="course-image">
+                    <img src="images/1.jpg" alt="Course Image">
+                </div>
+                <div class="course-info">
+                    <h2>Introduction to Machine Learning</h2>
+                    <p class="course-category">Data Science</p>
+                    <p class="course-rating">★★★★☆ (4.5)</p>
+                    <p class="course-instructor">Instructor: <a href="#">John Doe</a></p>
+                    <button id="enrollButton">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Course Description Section -->
+            <div class="course-description">
+                <h3>Course Description</h3>
+                <p>This course provides a comprehensive introduction to machine learning, covering key concepts, algorithms, and applications. By the end of the course, you will have a solid understanding of how to build and deploy machine learning models.</p>
+            </div>
+
+            <!-- Course Lessons Section -->
+            <div class="course-lessons">
+                <h3>Course Lessons</h3>
+                <ul>
+                    <li>Lesson 1: Introduction to Machine Learning</li>
+                    <li>Lesson 2: Supervised Learning</li>
+                    <li>Lesson 3: Unsupervised Learning</li>
+                    <li>Lesson 4: Neural Networks</li>
+                    <li>Lesson 5: Model Deployment</li>
+                </ul>
+            </div>
+
+            <!-- Instructor Section -->
+            <div class="instructor-section">
+                <h3>About the Instructor</h3>
+                <div class="instructor-info">
+                    <div class="instructor-avatar">
+                        <img src="images/10.jpg" alt="Instructor Avatar">
+                    </div>
+                    <div class="instructor-details">
+                        <h4>John Doe</h4>
+                        <p>John Doe is a seasoned data scientist with over 10 years of experience in machine learning and artificial intelligence. He has worked on numerous projects in the industry and is passionate about teaching.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/course-detail.js"></script>
+</body>
+</html>

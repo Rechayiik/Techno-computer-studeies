@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CMS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-container">
+            <!-- User Info Section -->
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="./images/2.jpg" alt="User Avatar">
+                </div>
+                <div class="user-details">
+                    <h2>John Doe</h2>
+                    <p>Email: john.doe@example.com</p>
+                    <p>Role: Student</p>
+                    <p>Joined: January 2023</p>
+                </div>
+            </div>
+
+            <!-- Enrolled Courses Section -->
+            <div class="enrolled-courses">
+                <h3>Enrolled Courses</h3>
+                <div class="course-list">
+                    <!-- Course cards will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enrolled Courses Section -->
+    <div class="course-grid">
+        <div class="course-card">
+            <div class="course-image">
+                <img src="./images/3.jpg" alt="course-image">
+            </div>
+            <div class="course-details">
+                <h3 class="course-title">Introduction to Machine Learning</h3>
+                <p class="course-category">Data Science</p>
+                <div class="course-rating">
+                    <span>☆☆☆☆☆</span>
+                    <span>(4.5)</span>
+                </div>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="course-image">
+                <img src="./images/3.jpg" alt="course-image">
+            </div>
+            <div class="course-details">
+                <h3 class="course-title">Introduction to Machine Learning</h3>
+                <p class="course-category">Data Science</p>
+                <div class="course-rating">
+                    <span>☆☆☆☆☆</span>
+                    <span>(4.5)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <p>&copy; 2023 Course Management System. All rights reserved.</p>
+    </footer>
+    <script src="js/profile.js"></script>
+</body>
+</html>
